@@ -13,9 +13,9 @@ st.subheader('Plan your project  with AI')
 
 # User input section in the sidebar
 st.sidebar.header('Enter details to generate a Road Map for projects:')
-#api_key = st.sidebar.text_input('Enter Your Google API Key', type="password")
+api_key = st.sidebar.text_input('Enter Your Google API Key', type="password")
 
-api_key = os.getenv("GEMINI_API_KEY")
+#api_key = os.getenv("GEMINI_API_KEY")
 project_name = st.sidebar.text_input('Enter your Project Name', '')
 project_description = st.sidebar.text_area("Project Details / Problem Statement", value="",  height=150, label_visibility="visible")
 
